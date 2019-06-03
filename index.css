@@ -1,6 +1,8 @@
 body{
     background-color: white;
-    font-family: 'Open Sans', sans-serif;
+   /* // font-family: 'Open Sans', sans-serif; */
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 20px;
 }
 .header{
     background-color: #fcf80c;
