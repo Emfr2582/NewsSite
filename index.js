@@ -5,12 +5,14 @@ let recivedNews = newsData => {
     newsData.articles.forEach(article => {
         document.querySelector(".row").innerHTML += `<div class="flip-card">
     <div class="flip-card-inner">
-        <h5>${article.title}</h2>
-        <img src="${article.urlToImage}"/>
         <div class="flip-card-front">
+        <h5>${article.title}</h2>
         <div class="flip-card-back">
+        <img src="${article.urlToImage}"/>
         <p>${article.content}</p>
-        </div> </div> </div>
+        </div>
+         </div> 
+         </div>
         </div> 
         </br>`;
     });
@@ -19,3 +21,4 @@ let recivedNews = newsData => {
 fetch(url)
 .then(Response => Response.json())
 .then(recivedNews);
+
