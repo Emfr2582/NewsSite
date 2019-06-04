@@ -1,6 +1,5 @@
 body{
     background-color: white;
-   
     font-family: 'Sigmar One', cursive;
     font-size: 20px;
 }
@@ -16,7 +15,7 @@ body{
 }
 img{
     border-radius: 4px;
-    width: 8%;
+    width: 100%;
 }
 .title {
     text-align: center;
@@ -50,15 +49,14 @@ li{
   }
   .column {
     float: left;
-    display: flex;
-    flex-direction: row;
-    width: 25%;
     padding: 0 10px;
   }
 .row {
     margin: 0 -5px;
     float:right;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .row:after {
@@ -77,9 +75,13 @@ li{
   }
   .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 25%;
   height: 300px;
   perspective: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1em 0 0 1em;
 }
 
 .flip-card-inner {
